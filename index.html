@@ -2,9 +2,108 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Voronin lab1</title>
+    <style>
+        .tableRow {
+            border: 1px solid black;
+        }
+        .tableCell {
+            border: 1px solid black;
+            padding: 10px;
+        }
+    </style>
 </head>
 <body>
+<main style="display: flex;flex-direction: column; align-items: center; width: 700px; background: #c1c1c1; margin: 0 auto;">
+    <h1>Variant 0</h1>
+    <h2>Text Formatting</h2>
+    <p>
+        Основна <b>тригонометрична тотожність</b>: <br/>
+        <i>cos</i><sup>2</sup><b>&#945;</b> + <i>sin</i><sup>2</sup><b>&#945;</b> = 1 <br/>
+        Приклад суворої нерівності: &#945; &#60; &#946;. <br/>
+        Нестрога нерівність &#945; &#8804; &#946; означає, що <br/>
+        або &#945; &#60; &#946;, або &#945; = &#946;.
+    </p>
+    <h2>List</h2>
+    <ul>
+        <li>
+            <h3>Питання 1:</h3>
+            <ul>
+                <li>Варіант відповіді 1</li>
+                <li>Варіант відповіді 2</li>
+                <li>Варіант відповіді 3</li>
+            </ul>
+        </li>
+        <li>
+            <h3>Питання 2:</h3>
+            <ul>
+                <li>Варіант відповіді 1</li>
+                <li>Варіант відповіді 2</li>
+                <li>Варіант відповіді 3</li>
+            </ul>
+        </li>
+        <li>
+            <h3>Питання 3:</h3>
+            <ul>
+                <li>Варіант відповіді 1</li>
+                <li>Варіант відповіді 2</li>
+                <li>Варіант відповіді 3</li>
+            </ul>
+        </li>
+    </ul>
+    <h2>Table</h2>
+    <table style="border-collapse: collapse; width: 100%;">
+        <thead>
+        <tr class="tableRow">
+            <th class="tableCell" rowspan="2">Студент</th>
+            <th class="tableCell" colspan="3">Оцінки</th>
+        </tr>
+        <tr class="tableRow">
+            <th class="tableCell">Веб Програмування</th>
+            <th class="tableCell">Клауд технології</th>
+            <th class="tableCell">Комп'ютерні мережі</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr class="tableRow">
+            <td class="tableCell">Воронін Роман</td>
+            <td class="tableCell">90</td>
+            <td class="tableCell">85</td>
+            <td class="tableCell">95</td>
+        </tr>
+        <tr class="tableRow">
+            <td class="tableCell">Студент 2</td>
+            <td class="tableCell">75</td>
+            <td class="tableCell">80</td>
+            <td class="tableCell">85</td>
+        </tr>
+        <tr class="tableRow">
+            <td class="tableCell">Студент 3</td>
+            <td class="tableCell">80</td>
+            <td class="tableCell">95</td>
+            <td class="tableCell">90</td>
+        </tr>
+        </tbody>
+    </table>
+    <h2>Registration Form</h2>
+    <form>
+        <label for="name">Ім'я:</label><br>
+        <input type="text" id="name" name="name" required><br>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br>
+        <label for="password">Пароль:</label><br>
+        <input type="password" id="password" name="password" required><br>
+        <label for="confirm-password">Підтвердження пароля:</label><br>
+        <input type="password" id="confirm-password" name="confirm-password" required><br>
+        <input type="submit" value="Зареєструватися">
+    </form>
+    <h2>Image Link</h2>
+    <a href="https://nure.ua/en/" target="_blank">
+        <img src="data:image/jpeg;base64,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"
+             alt="опис_зображення"
+        >
+    </a>
 
+</main>
 </body>
 </html>
